@@ -10,9 +10,18 @@ const name = 'Mario';
 
 // Dichiara la funzione qui.
 
+function salutaUserOrario(nomeUtente, orario) {
+    if (orario <= 13) {
+        return (`Buongiorno ${nomeUtente}`)
+    } else if (orario <= 17) {
+        return (`Buon pomeriggio ${nomeUtente}`)
+    } else if (orario > 17) {
+        return (`Buonasera ${nomeUtente}`)
 
+    }
+}
 // Invoca la funzione qui e stampa il risultato in console
-
+console.log(salutaUserOrario(name, 18));
 
 
 //Risultato atteso se si passa 'Mario' alle 18: // Buonasera Mario.
